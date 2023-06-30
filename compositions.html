@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>William Saul - Compositions</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="comp_script.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/logo.png" alt="Logo">
+            William Saul
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="compositions.html">Compositions</a>
+            <a href="about.html">About</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div style="width: 200px; text-align: right;">
+            <a href="https://www.youtube.com/@williamsaul"><img src="images/youtube.png" alt="YouTube" width="30px" height="30px"></a>
+            <a href="https://www.twitter.com/@williamwsaul"><img src="images/twitter.png" alt="Twitter" width="30px" height="30px"></a>
+            <a href="https://github.com/williamwsaul/williamsaul.com"><img src="images/github.png" alt="Twitter" width="30px" height="30px"></a>
+        </div>
+    </header>
+
+  <div class="content">
+    <div class="compositions_picture" id="compositions-image-section">
+    <div class="compositions_picture_image">
+    <img src="images/compositions_picture_image.jpeg" alt="compositions picture image">
+    </div>
+    </div>
+    </div>
+    </div>      
+
+    <div class="compositions">
+        <h2>Electroacoustic</h2>
+        <ul>
+        <li>
+            <span class="piece-title" onclick="openModal('electroacoustic_1')">2023 - Untitled</span>
+            </li>
+        </ul>
+        </div>
+
+    <div class="compositions">
+        <h2>Orchestra</h2>
+        <ul>
+        <li>
+            <span class="piece-title" onclick="openModal('orchestra_1')">2023 - Two Minutes of Spring</span>
+            </li>
+        </ul>
+        </div>
+
+    <div class="content">
+        <div class="compositions" id="compositions-section">
+        <h2>Chamber</h2>
+        <ul>
+        <li>
+            <span class="piece-title" onclick="openModal('chamber_2')">2021 - Cape Elizabeth</span>
+        </li>
+        </ul>
+    </div>
+
+    <div class="compositions">
+        <h2>Other</h2>
+        <ul>
+        <li>
+        <span class="piece-title" onclick="openModal('other_1')">2021/22 - Beginnings Pt. 2</span>
+        </li>
+        <li>
+        <span class="piece-title" onclick="openModal('other_2')">2018/20 - Beginnings Pt. 1</span>
+        </li>
+        </ul>
+    </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <img src="" alt="" style="height: 450px; width: 450px; display: none; padding-top: 20px;" id="modal_image">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3 id="modal-title">Title</h3>
+        <p id="modal-description">Description</p>
+        <audio id="modal-audio" controls>Your browser does not support the audio element.</audio>
+        <a href="https://www.youtube.com/watch?v=loBv6gSZkTQ" id="modalLink_Bpt2"> Listen on YouTube </a>
+        <a href="https://www.youtube.com/watch?v=P0CcBJsPMQQ" id="modalLink_Bpt1"> Listen on YouTube </a>
+    </div>
+    
+    <footer>
+        <div>
+            <p>Designed by William Saul | ©2023</p>
+        </div>
+    </footer>
+
+</body>
+</html>

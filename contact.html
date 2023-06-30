@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Saul - Contact</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/logo.png" alt="Logo">
+            William Saul
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="compositions.html">Compositions</a>
+            <a href="about.html">About</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div style="width: 200px; text-align: right;">
+            <a href="https://www.youtube.com/@williamsaul"><img src="images/youtube.png" alt="YouTube" width="30px" height="30px"></a>
+            <a href="https://www.twitter.com/@williamwsaul"><img src="images/twitter.png" alt="Twitter" width="30px" height="30px"></a>
+            <a href="https://github.com/williamwsaul/williamsaul.com"><img src="images/github.png" alt="Twitter" width="30px" height="30px"></a>
+        </div>
+    </header>
+
+    <div class="contact_container" style="padding-right: 105px;">
+        <p>Please listen <br>to recording:</p>
+        <audio controls>
+          <source src="audio/Website_Correspondence.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      
+<div style="padding-bottom: 20px;">
+<center>
+      <embed src="images/Correspondence.pdf" width="800" height="600" type="application/pdf">
+</center>
+</div>
+
+<footer>
+    <div>
+        <p>Designed by William Saul | ©2023</p>
+    </div>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      let isMobile = /iPhone|iPad|iPod|Android|webOS|BlackBerry|Windows Phone/i.test(navigator.userAgent)
+      
+      if (isMobile) {
+        let messageContainer = document.getElementById("pdf-download-message")
+        messageContainer.innerHTML = "The PDF is not supported on mobile devices. Please <a href='images/Correspondence.pdf' download>click here to download the PDF</a>."
+      }
+    })
+  </script>
+</body>
+</html>

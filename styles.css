@@ -1,0 +1,321 @@
+                                    /* Main styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: radial-gradient(ellipse 200% 50% at center, #000000, #1e2b3a);
+    color: #dedede;
+    margin: 0;
+    padding: 0;
+}
+                                            /* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    background-color: #11274bac;
+    color: #dedede;
+    flex-shrink: 0;
+}
+
+#logo h1 {
+    margin: 0;
+}
+                                        /* Footer styles */
+footer {
+    background-color: #11274bac;
+    color: #dedede;
+    padding: 15px;
+    text-align: center;
+    flex-shrink: 0;
+}
+                                        /* nav styles */
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin-left: 10px;
+    color: #dedede;
+    text-decoration: none;
+    font-size: 18px;
+}
+                                        /* Slideshow container (index.html) */
+.slideshow-container {      /* play around with max-width */
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+    overflow: hidden;
+}
+    
+                                                    /* Slides */
+    .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+    
+                                            /* Show active slide */
+    .slide.active {
+    opacity: 1;
+}
+    
+                                                /* Navigation arrows */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+    
+    .prev {
+    left: 10px;
+}
+    
+    .next {
+    right: 10px;
+}
+    
+                                            /* Progress dots */
+    .dot-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+    
+    .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+    
+    .dot.active {
+    background-color: white;
+}
+
+    .slide img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+                                    /* Quote styles (index.html) */
+.quote {
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+                                       /* Content styles */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+                                /* List styles (compositions.html) */
+#compositions-section {
+    margin-top: -50px;
+    margin-bottom: 20px;
+}
+
+#compositions-image-section {
+    margin-top: -50px;
+}
+
+.compositions {
+    margin-bottom: 30px;
+}
+
+.compositions h2 {
+    text-align: center;
+}
+
+.compositions ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.compositions li {
+    margin-bottom: 10px;
+}
+
+.recording-button {
+    margin-left: 10px;
+}
+                                 /* Composition styles (compositions.html) */
+.compositions_picture_image {
+    text-align: center;
+}
+
+.compositions_picture_image img {
+    max-width: 100%;
+    height: auto;
+    width: 950px;
+    height: 225px;
+    background-color: transparent;
+}
+                                            /* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  #modal-description {
+    margin: 0 auto;
+    max-width: 500px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    min-width: 150px;
+  }  
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+                                            /* Other styles (still compositions.html)*/
+  .content {
+    margin-top: 75px;
+  }
+  
+  .compositions {
+    margin-bottom: 40px;
+  }
+  
+  .compositions h2 {
+    margin-bottom: 10px;
+  }
+  
+  .piece-title {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .recording-button {
+    margin-left: 10px;
+  }
+                                            /* Biography Styles */
+  .biography_image img {
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
+    margin-left: 20px;
+  }
+  
+  .biography {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .biography_image {
+    flex: 0 0 auto;
+    margin-right: 20px;
+  }
+
+  .biography_text {
+    flex: 1 1 auto;
+    margin-right: 20px;
+    text-align: left;
+  }
+/*
+  .biography_text a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;   ---- open to changing back to left? 
+    max-width: 75px;
+  }
+*/
+  #biography-section {
+    margin-top: -60px;
+    margin-bottom: 20px;
+}
+                                            /* a-tags to buttons */
+
+.a-tag_contact,
+#modalLink_Bpt2,
+#modalLink_Bpt1 {
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+}
+                                            /* contact text/audio */
+
+.contact_container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+    .contact_container p {
+    margin-right: 15px;
+}
