@@ -140,15 +140,15 @@ nav a {
     margin-left: auto;
     margin-right: auto;
 }
-                                       /* Content styles */
-.content {
+                                /* List styles (compositions.html) */
+.comp-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 75px;
 }
-                                /* List styles (compositions.html) */
+
 #compositions-section {
     margin-top: -50px;
     margin-bottom: 20px;
@@ -159,28 +159,28 @@ nav a {
 }
 
 .compositions {
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .compositions h2 {
-    text-align: center;
+  margin-top: 20px;
 }
 
 .compositions ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .compositions li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .recording-button {
     margin-left: 10px;
 }
-                                 /* Composition styles (compositions.html) */
+                                    /* Composition styles (compositions.html) */
 .compositions_picture_image {
   text-align: center;
   width: 950px;
@@ -250,9 +250,6 @@ nav a {
     cursor: pointer;
   }
                                             /* Other styles (still compositions.html)*/
-  .content {
-    margin-top: 75px;
-  }
   
   .compositions {
     margin-bottom: 40px;
@@ -271,11 +268,19 @@ nav a {
     margin-left: 10px;
   }
                                             /* Biography Styles */
+.bio-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 75px;
+  padding: 0 45px;
+}
+
   .biography_image img {
     width: 500px;
     height: 500px;
     background-color: transparent;
-    margin-left: 20px;
   }
   
   .biography {
@@ -290,20 +295,29 @@ nav a {
 
   .biography_text {
     flex: 1 1 auto;
-    margin-right: 20px;
     text-align: left;
   }
-/*
-  .biography_text a {
-    display: block;
-    margin: 0 auto;
-    text-align: center;   ---- open to changing back to left? 
-    max-width: 75px;
-  }
-*/
   #biography-section {
     margin-top: -60px;
     margin-bottom: 20px;
+}
+                                      /* Biography for mobile  */
+
+@media only screen and (max-width: 768px) {
+  .biography {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .biography_image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .biography_text {
+    text-align: center;
+    font-size: 1rem;
+  }
 }
                                             /* a-tags to buttons */
 
