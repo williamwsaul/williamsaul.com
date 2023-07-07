@@ -345,7 +345,8 @@ nav a {
 }
     
     .contact_container p {
-    margin-right: 15px;
+    padding: 10px;
+    text-align: center;
 }
 
 #pdf-download-message {
