@@ -140,6 +140,13 @@ nav a {
     margin-left: auto;
     margin-right: auto;
 }
+
+@media only screen and (max-width: 768px) {
+  .quote {
+    font-size: 1rem;
+  }
+}
+
                                 /* List styles (compositions.html) */
 .comp-content {
   display: flex;
