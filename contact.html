@@ -29,10 +29,12 @@
 
     <div class="contact_container" style="padding-right: 105px;">
         <p>Please listen <br>to recording:</p>
+        <div class="audio-player">
         <audio controls>
           <source src="audio/Website_Correspondence.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
+        <div>
       </div>
       
 <div id="pdf-download-message" style="padding-bottom: 20px;">
@@ -49,12 +51,12 @@
 <script>
     document.addEventListener("DOMContentLoaded", function() {
       let isMobile = /iPhone|iPad|iPod|Android|webOS|BlackBerry|Windows Phone/i.test(navigator.userAgent)
-      
+
       if (isMobile) {
         let messageContainer = document.getElementById("pdf-download-message")
       let embedElement = document.getElementById("pdf-embed")
       
-      messageContainer.innerHTML = "The embedded document is not supported on mobile devices. <br>Please download: "
+      messageContainer.innerHTML = "The embedded document is not supported on mobile devices. Please download: "
 
       let downloadLink = document.createElement("a")
       downloadLink.classList.add("pdf-download-link")

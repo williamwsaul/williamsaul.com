@@ -352,6 +352,10 @@ nav a {
   text-align: center;
 }
 
-#pdf-download-message::first-line {
-  text-decoration: underline;
+.audio-player {
+  display: flex;
+}
+
+.audio-player audio {
+  flex-grow: 1;
 }
