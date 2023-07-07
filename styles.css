@@ -323,7 +323,8 @@ nav a {
 
 .a-tag_contact,
 #modalLink_Bpt2,
-#modalLink_Bpt1 {
+#modalLink_Bpt1,
+.pdf-download-link {
     font: bold 11px Arial;
     text-decoration: none;
     background-color: #EEEEEE;
@@ -345,4 +346,12 @@ nav a {
     
     .contact_container p {
     margin-right: 15px;
+}
+
+#pdf-download-message {
+  text-align: center;
+}
+
+#pdf-download-message::first-line {
+  text-decoration: underline;
 }
