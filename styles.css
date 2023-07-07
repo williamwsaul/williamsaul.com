@@ -351,11 +351,3 @@ nav a {
 #pdf-download-message {
   text-align: center;
 }
-
-.audio-player {
-  display: flex;
-}
-
-.audio-player audio {
-  flex-grow: 1;
-}
