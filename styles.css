@@ -106,7 +106,7 @@ nav a {
     height: 0;
     padding-bottom: 75%;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 15px;
     overflow: hidden;
   }
 
@@ -334,7 +334,7 @@ nav a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 75px;
+  margin-top: 20px;
   padding: 0 45px;
 }
 
@@ -352,6 +352,7 @@ nav a {
   .biography_image {
     flex: 0 0 auto;
     margin-right: 20px;
+    text-align: center;
   }
 
   .biography_text {
@@ -359,22 +360,31 @@ nav a {
     text-align: left;
   }
   #biography-section {
-    margin-top: -60px;
     margin-bottom: 20px;
 }
                                       /* Biography for mobile  */
 
 @media only screen and (max-width: 768px) {
+  .bio-content {
+    padding: 0;
+  }
+
+  .biography_text {
+    width: 98%;
+  }
+
   .biography {
     flex-direction: column;
     align-items: center;
   }
-  
+
+  .biography_image {
+    margin-right: 0;
+  }
+
   .biography_image img {
-    width: 100%;
+    width: 98%;
     height: auto;
-    max-width: 500px;
-    max-height: 500px;
   }
   
   .biography_text {
