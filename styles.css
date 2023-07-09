@@ -106,8 +106,13 @@ nav a {
     height: 0;
     padding-bottom: 75%;
     margin: 0 auto;
-    margin-top: 0px;
+    margin-top: 30px;
     overflow: hidden;
+  }
+
+  .dot-container {
+      left: 50%;
+      transform: translateX(-50%);
   }
 }
     
@@ -365,9 +370,11 @@ nav a {
     align-items: center;
   }
   
-  .biography_image {
-    margin-right: 0;
-    margin-bottom: 20px;
+  .biography_image img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    max-height: 500px;
   }
   
   .biography_text {
