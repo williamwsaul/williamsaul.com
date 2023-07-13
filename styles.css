@@ -207,16 +207,7 @@ nav a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 75px;
-}
-
-#compositions-section {
-    margin-top: -50px;
-    margin-bottom: 20px;
-}
-
-#compositions-image-section {
-    margin-top: -50px;
+  padding: 1.5% 2%;
 }
 
 .compositions {
@@ -244,8 +235,8 @@ nav a {
                                     /* Composition styles (compositions.html) */
 .compositions_picture_image {
   text-align: center;
-  width: 950px;
-  height: 225px;
+  max-width: 100%;
+  height: auto;
   overflow: hidden;
 }
 
@@ -259,10 +250,8 @@ nav a {
 }
 
 .image_wrapper img {
-  width: auto;
-  height: 100%;
-  min-width: 100%;
-  max-width: none;
+  width: 100%;
+  height: auto;
   object-fit: fill;
   object-position: center;
 }
@@ -327,6 +316,19 @@ nav a {
   
   .recording-button {
     margin-left: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .comp-content {
+      width: 100%;
+      padding: 0;
+      margin-top: auto;
+      font-size: 1rem;
+    }
+
+    .modal {
+      font-size: 1rem;
+    }
   }
                                             /* Biography Styles */
 .bio-content {
