@@ -45,15 +45,6 @@ function openModal(title) {
       modal_image.src = "images/Cape Elizabeth.jpg"
       modal_image.style.display = "inline-block"
     } else if (title == "other_1") {
-      modalTitle.textContent = "Film Scoring Demo"
-      modalDescription.textContent = "Coming Soon - No recording available"
-      modalAudio.style = "display: none"
-      modalAudio.style = "display: none"
-      modalLink_Bpt1.style = "display: none"
-      modalLink_Bpt2.style = "display: none"
-      modal_image.src = "none"
-      modal_image.style.display = "none"
-    } else if (title == "other_2") {
         modalTitle.textContent = "Beginnings Pt. 2"
         modalDescription.textContent = "An early collection of music I wrote between 2021 & 2022."
         modalAudio.style = "display: none"
@@ -61,7 +52,7 @@ function openModal(title) {
         modalLink_Bpt2.style = "display: auto"
         modal_image.src = "images/Beginnings Pt. 2.jpeg"
         modal_image.style.display = "inline-block"
-      } else if (title == "other_3") {
+      } else if (title == "other_2") {
         modalTitle.textContent = "Beginnings Pt. 1"
         modalDescription.textContent = "An early collection of music I wrote between 2018 & 2020."
         modalAudio.style = "display: none"
