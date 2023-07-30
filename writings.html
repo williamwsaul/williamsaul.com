@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>William Saul - About</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Saul - Writings</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
@@ -28,20 +29,29 @@
             </ul>
         </nav>
         </header>
-    
-<div class="about-container">
-<img class="bio-profile-img" src="images/biography_image.jpeg" alt="Profile Picture">
-    <div class="bio-text">
-    <h2>Short Biography</h2>
-        <p>
-            William W. Saul is an American music composer and nature enthusiast, primarily focused on electroacoustic pieces with found objects. Some of his recent subjects include wind chimes, waves, staircases, and industrial machinery.
-        <p>
-            During his formative years, William taught himself to produce EDM, DJ, play the piano, guitar, and write jazz, classical, and metal music. Currently, he is studying with esteemed composer Samuel Andreyev, interning for multi-platinum producer Kevin Gutierrez, and pursuing a B.A. in Music Composition for Film, Tv, and Games at Berklee Online.
-        <p>
-            In his leisure hours, William spends his time outdoors with bow and arrows, being an avid archer for 12 years. He also enjoys traveling and playing chess.
-        </p>
+
+    <div class="research-papers-container">
+
+        <div class="research-paper-item">
+            <div class="research-paper-cover">
+                <img src="images/VirtuAI_Composition.jpg" class="research-cover">
+            </div>
+            <div class="research-paper-details">
+                <h2 class="research-paper-title">2023 - VirtuAI Composition: Artificial Intelligence, Future Music</h2>
+                <p class="research-paper-description">3k word essay on musical AI"</p>
+                <a class="research-paper-link" href="images/VirtuAI_Composition.pdf" target="_blank">View Paper</a>
+            </div>
+        </div>
     </div>
-</div>
+
+    <center>
+    <div id="twitter-container">
+        <a class="twitter-timeline" data-dnt="true" data-theme="dark" href="https://twitter.com/WilliamWSaul?ref_src=twsrc%5Etfw">Tweets by WilliamWSaul</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    </center>
+
+    <div style="padding-top: 20px">
+    </div>
 
     <footer>
         <p>©William W. Saul</p>
@@ -50,6 +60,18 @@
         <a href="https://github.com/williamwsaul"><img src="images/github.png" alt="Twitter" width="25px" height="25px"></a>
     </footer>
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          let twitterScript = document.createElement("script")
+          twitterScript.src = "https://platform.twitter.com/widgets.js"
+          twitterScript.onerror = handleEmbedError
+        
+          document.head.appendChild(twitterScript)
+        })
+        
+        function handleEmbedError() {
+            alert("Please disable ad blocking if you can't view embedded tweets.")
+        }
+
                                 //Hamburger
 function toggleMenu() {
     let sideMenu = document.getElementById('sideMenu')
@@ -62,6 +84,6 @@ function toggleMenu() {
                 sideMenu.classList.remove('open')
             }
         })
-    </script>
+      </script> 
 </body>
 </html>

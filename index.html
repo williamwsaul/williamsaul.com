@@ -8,44 +8,41 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-    <header>
-        <div id="logo">
+    <header class="main-header">
+        <div class="logo-title">
             <img src="images/favicon.png" alt="Logo">
             <h1>William Saul</h1>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="compositions.html">Compositions</a>
-            <a href="about.html">About</a>
-            <a href="research.html">Research</a>
-            <a href="contact.html">Contact</a>
+        <button class="hamburger-btn" onclick="toggleMenu()">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <nav class="menu" id="sideMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="compositions.html">Compositions</a></li>
+                <li><a href="writings.html">Writings</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
-        <div id="social-icons">
-            <a href="#" class="invisible-link">space</a>
-            <a href="https://www.youtube.com/@williamsaul"><img src="images/youtube.png" alt="YouTube" width="30px" height="30px"></a>
-            <a href="https://www.twitter.com/@williamwsaul"><img src="images/twitter.png" alt="Twitter" width="30px" height="30px"></a>
-            <a href="https://github.com/williamwsaul"><img src="images/github.png" alt="Twitter" width="30px" height="30px"></a>
-        </div>
-    </header>
-
-
+        </header>
 
 <div class="slideshow-container">
+    <button onclick="toggleArchive()" id="archiveButton">Archive</button>
+
     <div class="slide active"><img src="images/Nov2021.png" alt="Slide 1"></div>
     <div class="slide"><img src="images/April2020.png" alt="Slide 2"></div>
-    <div class="slide"><img src="images/March2020.png" alt="Slide 3"></div>
-    <div class="slide"><img src="images/June2018.jpeg" alt="Slide 4"></div>
+    <div class="slide"><img src="images/June2018.jpeg" alt="Slide 3"></div>
     <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
     <a class="next" onclick="changeSlide(1)">&#10095;</a>
     <div class="dot-container">
       <span class="dot active" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
     </div>
 </div>
-
-
 
 <div class="quote" style="font-size: 110%;">
     <p>   
@@ -55,15 +52,38 @@
     </p>
 </div>
 
+<div class="photo-gallery-container" style="display: none;">
+  <button onclick="returnToSlideshow()" id="returnButton">Return</button>
 
-
-<footer>
-    <div>
-        <p>Designed by William Saul | ©2023</p>
+    <div class="year-header">2021</div>
+    <div class="gallery">
+      <img src="images/Nov2021.png" alt="November 2021" onclick="zoomImage('images/Nov2021.png')">
     </div>
-</footer>
 
+    <div class="year-header">2020</div>
+    <div class="gallery">
+      <img src="images/April2020.png" alt="April 2020" onclick="zoomImage('images/April2020.png')">
+      <img src="images/March2020.png" alt="March 2020" onclick="zoomImage('images/March2020.png')">
+      <img src="images/January2020.jpeg" alt="January 2020" onclick="zoomImage('images/January2020.jpeg')">
+    </div>
 
+    <div class="year-header">2018</div>
+    <div class="gallery">
+      <img src="images/June2018.jpeg" alt="June 2018" onclick="zoomImage('images/June2018.jpeg')">
+      <img src="images/biography_image.jpeg" alt="May 2018" onclick="zoomImage('images/biography_image.jpeg')">
+    </div>
+  </div>
+
+<div class="zoom-overlay" onclick="hideZoomImage()">
+  <img src="" alt="Zoomed Photo">
+</div>
+
+    <footer>
+        <p>©William W. Saul</p>
+        <a href="https://www.youtube.com/@williamsaul" style="margin-left: 5px;"><img src="images/youtube.png" alt="YouTube" width="25px" height="25px"></a>
+        <a href="https://www.twitter.com/@williamwsaul"><img src="images/twitter.png" alt="Twitter" width="25px" height="25px"></a>
+        <a href="https://github.com/williamwsaul"><img src="images/github.png" alt="Twitter" width="25px" height="25px"></a>
+    </footer>
 
 <script>
 let slideIndex = 1
@@ -101,6 +121,73 @@ function showSlide(n) {
     dots[slideIndex - 1].className += " active"
 }
 
+function toggleArchive() {
+  const slideshowContainer = document.querySelector(".slideshow-container")
+  const quoteContainer = document.querySelector(".quote")
+  const photoGalleryContainer = document.querySelector(".photo-gallery-container")
+  const archiveButton = document.getElementById("archiveButton")
+  const returnButton = document.getElementById("returnButton")
+
+  slideshowContainer.style.display = slideshowContainer.style.display === "none" ? "block" : "none"
+  quoteContainer.style.display = quoteContainer.style.display === "none" ? "block" : "none"
+
+  if (photoGalleryContainer.style.display === "none") {
+    photoGalleryContainer.style.display = "block"
+    archiveButton.textContent = "Return"
+    returnButton.style.display = "block"
+    photoGalleryVisible = true
+  } else {
+    photoGalleryContainer.style.display = "none"
+    archiveButton.textContent = "Archive"
+    returnButton.style.display = "none"
+    photoGalleryVisible = false
+  }
+}
+
+function returnToSlideshow() {
+  const slideshowContainer = document.querySelector(".slideshow-container")
+  const quoteContainer = document.querySelector(".quote")
+  const photoGalleryContainer = document.querySelector(".photo-gallery-container")
+  const archiveButton = document.getElementById("archiveButton")
+  const returnButton = document.getElementById("returnButton")
+
+  slideshowContainer.style.display = "block"
+  quoteContainer.style.display = "block"
+
+  photoGalleryContainer.style.display = "none"
+  archiveButton.textContent = "Archive"
+  returnButton.style.display = "none"
+  photoGalleryVisible = false
+}
+
+function zoomImage(imageSrc) {
+  const zoomOverlay = document.querySelector(".zoom-overlay")
+  const zoomImage = zoomOverlay.querySelector("img")
+
+  zoomImage.src = imageSrc
+  zoomOverlay.style.display = "flex"
+}
+
+function hideZoomImage() {
+  const zoomOverlay = document.querySelector(".zoom-overlay")
+  zoomOverlay.style.display = "none"
+}
+
+document.getElementById("returnButton").addEventListener("click", returnToSlideshow)
+
+
+                                //Hamburger
+function toggleMenu() {
+            let sideMenu = document.getElementById('sideMenu')
+            sideMenu.classList.toggle('open')
+        }
+
+        window.addEventListener('resize', function() {
+            let sideMenu = document.getElementById('sideMenu')
+            if (window.innerWidth > 768) {
+                sideMenu.classList.remove('open')
+            }
+        })
     </script>
 </body>
 </html>

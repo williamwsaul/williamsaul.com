@@ -9,39 +9,38 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-    <header>
-        <div id="logo">
+    <header class="main-header">
+        <div class="logo-title">
             <img src="images/favicon.png" alt="Logo">
             <h1>William Saul</h1>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="compositions.html">Compositions</a>
-            <a href="about.html">About</a>
-            <a href="research.html">Research</a>
-            <a href="contact.html">Contact</a>
+        <button class="hamburger-btn" onclick="toggleMenu()">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <nav class="menu" id="sideMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="compositions.html">Compositions</a></li>
+                <li><a href="writings.html">Writings</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
-        <div id="social-icons">
-            <a href="#" class="invisible-link">space</a>
-            <a href="https://www.youtube.com/@williamsaul"><img src="images/youtube.png" alt="YouTube" width="30px" height="30px"></a>
-            <a href="https://www.twitter.com/@williamwsaul"><img src="images/twitter.png" alt="Twitter" width="30px" height="30px"></a>
-            <a href="https://github.com/williamwsaul"><img src="images/github.png" alt="Twitter" width="30px" height="30px"></a>
-        </div>
     </header>
 
-    <div class="comp-content">
+        <center>
           <div class="compositions_picture_image">
-            <div class="image_wrapper">
               <img src="images/compositions_picture_image.jpg" alt="compositions picture image">
-            </div>
           </div>
-      </div>
+        </center>
 
     <div class="compositions">
         <h2>Electroacoustic</h2>
         <ul>
         <li>
-            <span class="piece-title" onclick="openModal('electroacoustic_1')">2023 - Untitled</span>
+            <span class="piece-title" onclick="openModal('electroacoustic_1')">2023 - Deforestation</span>
             </li>
         <li>
             <span class="piece-title" onclick="openModal('electroacoustic_2')">2023 - Stairs</span>
@@ -50,10 +49,10 @@
         </div>
 
     <div class="compositions">
-        <h2>Orchestra</h2>
+        <h2>Orchestral</h2>
         <ul>
         <li>
-            <span class="piece-title" onclick="openModal('orchestra_1')">2023 - Two Minutes of Spring</span>
+            <span class="piece-title" onclick="openModal('orchestral_1')">2023 - Spring Suite</span>
             </li>
         </ul>
         </div>
@@ -62,7 +61,16 @@
         <h2>Chamber</h2>
         <ul>
         <li>
-            <span class="piece-title" onclick="openModal('chamber_2')">2021 - Cape Elizabeth</span>
+            <span class="piece-title" onclick="openModal('chamber_1')">2021 - Cape Elizabeth</span>
+        </li>
+        </ul>
+    </div>
+
+    <div class="compositions">
+        <h2>Solo</h2>
+        <ul>
+        <li>
+            <span class="piece-title" onclick="openModal('solo_1')">2023 - serialist.js</span>
         </li>
         </ul>
     </div>
@@ -90,10 +98,25 @@
     </div>
     
     <footer>
-        <div>
-            <p>Designed by William Saul | ©2023</p>
-        </div>
+        <p>©William W. Saul</p>
+        <a href="https://www.youtube.com/@williamsaul" style="margin-left: 5px;"><img src="images/youtube.png" alt="YouTube" width="25px" height="25px"></a>
+        <a href="https://www.twitter.com/@williamwsaul"><img src="images/twitter.png" alt="Twitter" width="25px" height="25px"></a>
+        <a href="https://github.com/williamwsaul"><img src="images/github.png" alt="Twitter" width="25px" height="25px"></a>
     </footer>
 
+<script>
+                                //Hamburger
+function toggleMenu() {
+            let sideMenu = document.getElementById('sideMenu')
+            sideMenu.classList.toggle('open')
+        }
+
+        window.addEventListener('resize', function() {
+            let sideMenu = document.getElementById('sideMenu')
+            if (window.innerWidth > 768) {
+                sideMenu.classList.remove('open')
+            }
+        })
+</script>
 </body>
 </html>
