@@ -373,11 +373,15 @@ body {
   margin-bottom: 10px;
 }
 
-.recording-button {
-    margin-left: 10px;
+.hidden {
+  display: none;
 }
 
                                     /* Composition styles (compositions.html) */
+
+#scores-button {
+  position: absolute;
+}
 
 .compositions_picture_image {
   padding-top: 20px;
@@ -412,12 +416,16 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);
     text-align: center;
     z-index: 1001;
   }
   
+  #modal_image {
+    max-height: 500px;
+    max-width: 100%;
+}
+
   .modal-content {
     background-color: #dedede;
     margin: 15% auto;
@@ -435,14 +443,17 @@ body {
   }  
 
   .close {
-    color: #aaa;
+    color: rgb(0, 0, 0);
     float: right;
-    font-size: 28px;
+    font-size: 1.5rem;
     font-weight: bold;
+    background-color: rgba(122, 122, 122, 0.548);
+    padding: 2.5px 10px;
   }
   
   .close:hover,
   .close:focus {
+    background-color: #ef3f3f;
     color: #000;
     text-decoration: none;
     cursor: pointer;
@@ -452,11 +463,6 @@ body {
     .modal {
       font-size: 1rem;
     }
-
-    #modal_image {
-      max-width: 100%;
-      height: auto;
-  }
 }
                                             /* Other styles (still compositions.html)*/
   
@@ -472,9 +478,27 @@ body {
     cursor: pointer;
     text-decoration: underline;
   }
+
+  #revealButton {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #dedede;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+  }
   
-  .recording-button {
-    margin-left: 10px;
+  #revealButton:hover {
+    opacity: 1;
+  }
+  
+  .arrow-icon {
+    display: block;
+    font-size: 1rem;  
+    margin-top: 4px;
   }
 
                                             /* Biography Styles */
@@ -521,9 +545,9 @@ body {
                                             /* a-tags to buttons */
 
 .a-tag_contact,
+#modalLink_Cape_Elizabeth,
 #modalLink_Bpt2,
-#modalLink_Bpt1,
-.pdf-download-link {
+#modalLink_Bpt1 {
     font: bold 11px Arial;
     text-decoration: none;
     background-color: #EEEEEE;

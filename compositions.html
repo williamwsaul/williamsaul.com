@@ -36,72 +36,66 @@
           </div>
         </center>
 
-    <div class="compositions">
-        <h2>Electroacoustic</h2>
-        <ul>
-        <li>
-            <span class="piece-title" onclick="openModal('electroacoustic_1')">2023 - Deforestation</span>
+        <div class="compositions">
+            <h2>2023</h2>
+            <ul>
+            <li>
+                <span class="piece-title" onclick="openModal('2023_3')"></span>
             </li>
-        <li>
-            <span class="piece-title" onclick="openModal('electroacoustic_2')">2023 - Stairs</span>
-        </li>
-        </ul>
-        </div>
-
-    <div class="compositions">
-        <h2>Orchestral</h2>
-        <ul>
-        <li>
-            <span class="piece-title" onclick="openModal('orchestral_1')">2023 - Spring Suite</span>
+            <li>
+                <span class="piece-title" onclick="openModal('2023_2')"></span>
             </li>
-        </ul>
-        </div>
+            <li>
+                <span class="piece-title" onclick="openModal('2023_1')">Stairs</span>
+            </li>
+            </ul>
+            </div>
 
-    <div class="compositions">
-        <h2>Chamber</h2>
-        <ul>
-        <li>
-            <span class="piece-title" onclick="openModal('chamber_1')">2021 - Cape Elizabeth</span>
-        </li>
-        </ul>
-    </div>
+            <center>
+                <button id="revealButton">
+                  Other
+                  <br>
+                  <span class="arrow-icon">&#9660;</span>
+                </button>
+            </center>
 
-    <div class="compositions">
-        <h2>Solo</h2>
-        <ul>
-        <li>
-            <span class="piece-title" onclick="openModal('solo_1')">2023 - serialist.js</span>
-        </li>
-        </ul>
-    </div>
+    <div id="hiddenContent" class="hidden">
 
-    <div class="compositions">
-        <h2>Other</h2>
-        <ul>
-        <li>
-        <span class="piece-title" onclick="openModal('other_1')">2021/22 - Beginnings Pt. 2</span>
-        </li>
-        <li>
-        <span class="piece-title" onclick="openModal('other_2')">2018/20 - Beginnings Pt. 1</span>
-        </li>
-        </ul>
+            <div class="compositions">
+                <h2>Early</h2>
+                <ul>
+                <li>
+                    <span class="piece-title" onclick="openModal('early_5')">Two Minutes of Spring</span>
+                </li>
+                <li>
+                    <span class="piece-title" onclick="openModal('early_4')">Berklee Scoring Demo</span>
+                </li>
+                <li>
+                    <span class="piece-title" onclick="openModal('early_3')">Cape Elizabeth</span>
+                </li>
+                <li>
+                    <span class="piece-title" onclick="openModal('early_2')">Beginnings Pt. 2</span>
+                    </li>
+                    <li>
+                    <span class="piece-title" onclick="openModal('early_1')">Beginnings Pt. 1</span>
+                </li>
+                </div>
+
     </div>
 
     <div id="modal" class="modal">
-        <img src="" alt="" style="height: 450px; width: 450px; display: none; padding-top: 20px;" id="modal_image">
-        <span class="close" onclick="closeModal()">&times;</span>
+        <span class="close" onclick="closeModal()" style="position: absolute; right: 0%;">&times;</span>
+        <img src="" alt="" id="modal_image">
         <h3 id="modal-title">Title</h3>
         <p id="modal-description">Description</p>
         <audio id="modal-audio" controls>Your browser does not support the audio element.</audio>
+        <a href="https://www.youtube.com/watch?v=nSDgGn-42zA" id="modalLink_Cape_Elizabeth"> Listen on YouTube </a>
         <a href="https://www.youtube.com/watch?v=loBv6gSZkTQ" id="modalLink_Bpt2"> Listen on YouTube </a>
         <a href="https://www.youtube.com/watch?v=P0CcBJsPMQQ" id="modalLink_Bpt1"> Listen on YouTube </a>
     </div>
     
     <footer>
-        <p>©William W. Saul</p>
-        <a href="https://www.youtube.com/@williamsaul" style="margin-left: 5px;"><img src="images/youtube.png" alt="YouTube" width="25px" height="25px"></a>
-        <a href="https://www.twitter.com/@williamwsaul"><img src="images/twitter.png" alt="Twitter" width="25px" height="25px"></a>
-        <a href="https://github.com/williamwsaul"><img src="images/github.png" alt="Twitter" width="25px" height="25px"></a>
+        <p>©2023 William W. Saul</p>
     </footer>
 
 <script>
