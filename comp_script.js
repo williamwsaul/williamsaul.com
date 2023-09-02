@@ -73,7 +73,7 @@ function openModal(title) {
     } else if (title == "2023_1") {
       modalTitle.textContent = "Stairs"
       modalDescription.textContent = "Staircase & electronics. Documentation: https://twitter.com/WilliamWSaul/status/1697928518095482905?s=20"
-      modalAudio.src = "audio/Stairs.wav"
+      modalAudio.src = "audio/Stairs.mp3"
       modalLink_CapeElizabeth.style = "display: none"
       modalLink_Bpt1.style = "display: none"
       modalLink_Bpt2.style = "display: none"
