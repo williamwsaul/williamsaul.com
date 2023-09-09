@@ -49,7 +49,10 @@ function openModal(title) {
       modalLink_Bpt2.style = "display: none"
       modal_image.src = "images/Cape Elizabeth.jpg"
       modal_image.style.display = "inline-block"
-    } else if (title == "early_4") {
+
+      //Scoring:
+
+    } else if (title == "scoring_1") {
       modalTitle.textContent = "Berklee Scoring Demo"
       modalDescription.textContent = "Coming Soon - No recording available"
       modalAudio.style = "display: none"
@@ -58,7 +61,7 @@ function openModal(title) {
       modalLink_Bpt2.style = "display: none"
       modal_image.src = "none"
       modal_image.style.display = "none"
-    } else if (title == "early_5") {
+    } else if (title == "scoring_2") {
       modalTitle.textContent = "Two Minutes of Spring"
       modalDescription.textContent = "Theme for chamber orchestra, written in early 2023. Dedicated to my wonderful mother & friend; Kellie Saul."
       modalAudio.style = "display: none"
