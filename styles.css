@@ -345,162 +345,6 @@ body {
   }
 }
 
-                                /* List styles (compositions.html) */
-.comp-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5% 10%;
-}
-
-.compositions {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.compositions h2 {
-  margin-top: 20px;
-}
-
-.compositions ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.compositions li {
-  margin-bottom: 10px;
-}
-
-.hidden {
-  display: none;
-}
-
-                                    /* Composition styles (compositions.html) */
-
-#scores-button {
-  position: absolute;
-}
-
-.compositions_picture_image {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  max-width: 100%;
-  height: 375px;
-  width: 1100px;
-  overflow: hidden;
-}
-
-.compositions_picture_image img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-@media screen and (max-width: 1100px) {
-  .compositions_picture_image {
-    height: auto;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-                                            /* Modal styles */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
-    text-align: center;
-    z-index: 1001;
-  }
-  
-  #modal_image {
-    max-height: 500px;
-    max-width: 100%;
-}
-
-  .modal-content {
-    background-color: #dedede;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  
-  #modal-description {
-    margin: 0 auto;
-    max-width: 500px;
-    margin-bottom: 10px;
-    margin-top: -10px;
-    min-width: 150px;
-  }  
-
-  .close {
-    color: rgb(0, 0, 0);
-    float: right;
-    font-size: 1.5rem;
-    font-weight: bold;
-    background-color: rgba(122, 122, 122, 0.548);
-    padding: 2.5px 10px;
-  }
-  
-  .close:hover,
-  .close:focus {
-    background-color: #ef3f3f;
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  @media screen and (max-width: 768px) {
-    .modal {
-      font-size: 1rem;
-    }
-}
-                                            /* Other styles (still compositions.html)*/
-  
-  .compositions {
-    margin-bottom: 40px;
-  }
-  
-  .compositions h2 {
-    margin-bottom: 10px;
-  }
-  
-  .piece-title {
-    cursor: pointer;
-    text-decoration: underline;
-  }
-
-  #revealButton {
-    background-color: transparent;
-    border: none;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    color: #dedede;
-    opacity: 0.75;
-    transition: opacity 0.3s ease;
-  }
-  
-  #revealButton:hover {
-    opacity: 1;
-  }
-  
-  .arrow-icon {
-    display: block;
-    font-size: 1rem;  
-    margin-top: 4px;
-  }
-
                                             /* Biography Styles */
 
   .about-container {
@@ -542,98 +386,22 @@ body {
       margin-right: 0;
     }
   }
-                                            /* a-tags to buttons */
 
-.a-tag_contact,
-#modalLink_Cape_Elizabeth,
-#modalLink_Bpt2,
-#modalLink_Bpt1 {
-    font: bold 11px Arial;
-    text-decoration: none;
-    background-color: #EEEEEE;
-    color: #333333;
-    padding: 2px 6px 2px 6px;
-    border-top: 1px solid #CCCCCC;
-    border-right: 1px solid #333333;
-    border-bottom: 1px solid #333333;
-    border-left: 1px solid #CCCCCC;
-}
+                                            /* Composition Page */
 
-                                                  /* Writings Styles */
-  .research-papers-container, #twitter-container {
-    line-height: 1.6;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 0px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-.research-paper-item {
-    border: 1.5px solid #ccc;
+  .composition {
+    background-color: #cccccc42;
     border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
     padding: 20px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 0px;
-}
-.research-paper-cover {
-    width: 100px;
-    height: 150px;
-    background-color: #ffffff;
-    margin-right: 20px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    max-width: 600px;
+    text-align: center;
+    transition: transform 0.2s;
 }
 
-.research-cover {
-  height: 250px;
-}
-
-.research-paper-details {
-    flex: 1;
-}
-.research-paper-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.research-paper-description {
-    margin-bottom: 10px;
-}
-.research-paper-link {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-}
-.research-paper-link:hover {
-    background-color: #0056b3;
-}
-
-/* Media Query for Mobile */
-@media (max-width: 768px) {
-    .research-paper-item {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: center;
-    }
-
-    .research-paper-cover {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    .research-cover {
-      height: 400px;
-      width: 350px;
-    }
+.composition:hover {
+    transform: scale(1.02);
 }
 
                                             /* contact text/audio */
