@@ -404,6 +404,11 @@ body {
     transform: scale(1.02);
 }
 
+@media (max-width: 768px) {
+  iframe {
+    max-width: 100%;
+  }
+}
                                             /* contact text/audio */
 
   #contact-container {
