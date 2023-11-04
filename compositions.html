@@ -24,6 +24,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="compositions.html">Compositions</a></li>
+            <li><a href="other.html">Other</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
         </nav>
@@ -33,20 +34,27 @@
     </center>
 
     <div class="composition">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sEMfnI64zPw?si=dc4D9l-KgDoP8Udc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <br><br><h2 style="display: inline;">Stairs </h2><h3 style="display: inline;">2023</h3>​
-        <h4>Staircase & electronics (5'13”)</h4>
-        <p><i>Stairs </i>is made entirely of sounds from my staircase, primarily from its metal hand-railing. To extract a wide selection of textures, I used yarn mallets, broomcorn brushes, chopsticks, fabric, and a double bass bow, as well my palms and knuckles. Once recorded, the sounds were arranged and processed digitally with delay, reverb, equalization, pitch-shifting, and some global effects, namely multi-band compression. The dry/wet balance was determined by the intention to enhance, but not drastically alter the sonic character of individual elements.
-            <br> <br> Structurally, the piece uses repetitive layering to develop a hypnotic flow. Stairs seeks to be an intriguing, while also evocative experience, eliciting both foreign and tribal qualities. A “space safari” - Kevin Gutierrez.</p>
-    </div>
-
-    <div class="composition">
         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3IfqBZPRysc?si=k_tqTvqgeCVtKcV_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <br><br><h2 style="display: inline;">Two Minutes of Spring </h2><h3 style="display: inline;">2023</h3>​
         <h4>Chamber Orchestra (2'09”)</h4>
         <p>Dedicated to my wonderful mother & friend - Kellie Saul</p>
     </div>
 
+    <div class="composition">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sEMfnI64zPw?si=dc4D9l-KgDoP8Udc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br><br><h2 style="display: inline;">Stairs </h2><h3 style="display: inline;">2023</h3>​
+        <h4>Staircase & electronics (5'13”)</h4>
+        <p><i>Stairs </i>is made entirely of sounds from my staircase, primarily from its metal hand-railing. To extract a wide selection of textures, I used yarn mallets, broomcorn brushes, chopsticks, fabric, and a double bass bow, as well my palms and knuckles. Once recorded, the sounds were arranged and processed digitally with delay, reverb, equalization, pitch-shifting, and some global effects, namely multi-band compression. The dry/wet balance was determined by the intention to enhance, but not drastically alter the sonic character of individual elements.
+            <br> <br> Structurally, the piece uses repetitive layering to develop a hypnotic flow. Stairs seeks to be an intriguing, while also evocative experience, eliciting both foreign and tribal qualities. A “space safari” - Kevin Gutierrez.</p>
+            <a href="documents/Stairs.pdf" download="Stairs.pdf" class="download-button">Download PDF</a>
+    </div>
+
+
+    <center> <button id="toggleContentButton">Early Work <br> ▽</button> </center>
+
+
+    <div id="contentToToggle" class="hidden-content">
+    
     <div class="composition">
         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nSDgGn-42zA?si=svdyVKOthtlgKJPv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <br><br><h2 style="display: inline;">Cape Elizabeth </h2><h3 style="display: inline;">2021</h3>​
@@ -73,12 +81,35 @@
             <b>Double Bass</b> Charles Slim (<i>Courtyard Guitar</i>)<br><br></p>
     </div>
 
+
+    </div>
+
+
     <footer>
         <p style="padding-right: 5px;">©2023 William W. Saul</p>
         <a href="https://www.twitter.com/@williamwsaul"><img src="images/X.jpg" alt="Twitter" width="25px" height="25px"></a>
         <a href="https://www.youtube.com/@williamsaul" style="margin-left: 5px;"><img src="images/youtube.png" alt="YouTube" width="25px" height="25px"></a>
       </footer>
+
     <script>
+
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleContentButton = document.getElementById('toggleContentButton')
+    const contentToToggle = document.getElementById('contentToToggle')
+
+    toggleContentButton.addEventListener('click', function () {
+        if (contentToToggle.classList.contains('hidden-content')) {
+            contentToToggle.classList.remove('hidden-content')
+            toggleContentButton.classList.add('cloud-animation')
+            setTimeout(() => {
+                toggleContentButton.style.display = 'none'
+            }, 500)
+        } else {
+            contentToToggle.classList.add('hidden-content')
+        }
+    })
+})
+
                                     //Hamburger
     function toggleMenu() {
       let sideMenu = document.getElementById('sideMenu')
