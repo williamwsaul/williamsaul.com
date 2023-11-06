@@ -15,19 +15,25 @@
         <h1>William Saul</h1>
     </div>
     <button class="hamburger-btn" onclick="toggleMenu()">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-    </button>
-    <nav class="menu" id="sideMenu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+  </button>
+  <nav class="menu" id="sideMenu">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="compositions.html">Compositions</a></li>
-        <li><a href="other.html">Other</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-    </nav>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+              <a href="javascript:void(0)">Work⬎</a>
+              <div class="dropdown-content">
+                  <a href="compositions.html">Compositions</a>
+                  <a href="videos.html">Videos</a>
+                  <a href="writings.html">Writings</a>
+              </div>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </nav>
     </header>
 
     <div id="contact-container">
