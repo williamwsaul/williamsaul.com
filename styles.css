@@ -538,7 +538,7 @@ li img, .logo-mobile img {
       order: -1;
     }
 
-    #Guitars-Photo {
+    #Waves-Photo {
       width: 100%
     }
   
@@ -547,3 +547,33 @@ li img, .logo-mobile img {
       font-size: 1rem;
     }
   }
+
+                                /* Writings Page */
+
+  .writings {
+    background-color: #cccccc42;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.writings:hover {
+    transform: scale(1.02);
+}
+
+#writings-picture {
+  width: 560px; 
+  height: 315px;
+}
+
+
+@media (max-width: 768px) {
+  #writings-picture {
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
