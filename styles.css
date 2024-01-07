@@ -1,7 +1,7 @@
                                     /* Main styles */
 body {
     font-family: 'Times New Roman', Times, serif;
-    background: radial-gradient(ellipse 200% 50% at center, #000000, #1e2b3a);
+    background: radial-gradient(ellipse 200% 50% at center, #000000, #141c26);
     color: #dedede;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
 
                                        /* Footer styles */
   footer {
-    background-color: #1c2b48;
+    background-color: #111a2c;
     color: #dedede;
     padding: 15px;
     display: flex;
@@ -23,7 +23,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1c2b48;
+  background-color: #111a2c;
   color: #dedede;
   padding: 15px;
   box-sizing: border-box;
