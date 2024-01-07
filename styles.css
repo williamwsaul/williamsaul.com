@@ -33,6 +33,11 @@ li img, .logo-mobile img {
   max-height: 45px;
 }
 
+li img:hover, .logo-mobile img:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -72,7 +77,13 @@ li img, .logo-mobile img {
   color: #dedede;
   text-decoration: none;
   font-size: 2rem;
+  transition: color 0.3s ease;
 } 
+
+.menu a:hover {
+  text-decoration: underline;
+  text-decoration-color: #88caf9;
+}
 
 .hamburger-btn {
   display: block;
@@ -525,7 +536,7 @@ li img, .logo-mobile img {
   
   #Waves-Photo {
     width: 310px; 
-    height: 550px;
+    height: 510px;
   }
 
   @media only screen and (max-width: 468px) {
