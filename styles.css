@@ -1,6 +1,6 @@
                                     /* Main styles */
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Cochin', 'Times New Roman', Times, serif;
     background: radial-gradient(ellipse 200% 50% at center, #000000, #141c26);
     color: #dedede;
     margin: 0;
@@ -34,7 +34,7 @@ li img, .logo-mobile img {
 }
 
 li img:hover, .logo-mobile img:hover {
-  opacity: 0.8;
+  opacity: 0.5;
   transition: opacity 0.3s ease;
 }
 
@@ -82,7 +82,7 @@ li img:hover, .logo-mobile img:hover {
 
 .menu a:hover {
   text-decoration: underline;
-  text-decoration-color: #88caf9;
+  text-decoration-color: #86c6f3;
 }
 
 .hamburger-btn {
