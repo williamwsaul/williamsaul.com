@@ -559,29 +559,6 @@ li img:hover, .logo-mobile img:hover {
     }
   }
 
-                                  /* Videos Page */
-
-  .videos {
-    background-color: #cccccc42;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 600px;
-    text-align: center;
-    transition: transform 0.2s;
-}
-
-.videos:hover {
-    transform: scale(1.02);
-}
-
-@media (max-width: 768px) {
-  iframe {
-    max-width: 100%;
-  }
-}
-
                                 /* Writings Page */
 
   .writings {
