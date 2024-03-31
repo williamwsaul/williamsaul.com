@@ -30,7 +30,7 @@ body {
 }
 
 li img, .logo-mobile img {
-  max-height: 45px;
+  max-height: 50px;
 }
 
 li img:hover, .logo-mobile img:hover {
@@ -428,7 +428,7 @@ li img:hover, .logo-mobile img:hover {
     }
   }
 
-                                            /* Composition Page */
+                                            /* Music Page */
 
   .composition {
     background-color: #cccccc42;
@@ -462,44 +462,6 @@ li img:hover, .logo-mobile img:hover {
 
 .download-button:hover {
   background-color: #297fb9d4;
-}
-
-.hidden-content {
-  display: none;
-}
-
-#toggleContentButton {
-  background: none;
-  border: none;
-  font: inherit;
-  cursor: pointer;
-  color: rgb(255, 255, 255);
-}
-
-.cloud-animation {
-  animation: cloudAnimation 0.5s forwards;
-}
-
-@keyframes cloudAnimation {
-  0% {
-      transform: scale(1) translateY(0);
-      opacity: 1;
-      filter: blur(0);
-  }
-  50% {
-      transform: scale(1.2) translateY(-20px);
-      opacity: 0.7;
-      filter: blur(3px);
-  }
-  100% {
-      transform: scale(1.5) translateY(-40px);
-      opacity: 0;
-      filter: blur(8px);
-  }
-}
-
-.cloud-animation {
-  animation: cloudAnimation 0.5s ease-out forwards;
 }
                                             /* contact text/audio */
 

@@ -18,16 +18,14 @@
         </button>
         <nav class="menu" id="sideMenu">
             <ul>
-                <li><a href="biography.html">Biography</a></li>
-                <li><a href="music.html">Music</a></li>
+                <li><a href="biography.html">BIOGRAPHY</a></li>
+                <li><a href="music.html">MUSIC</a></li>
                 <li class="logo-normal"><a href="index.html"><img src="images/favicon.png" alt="Logo"></a></li>
-                <li><a href="writings.html">Writings</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="writings.html">WRITINGS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
-
-<center><h2>New</h2></center>
 
     <div class="composition">
         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/s2in0UTixLA?si=fybNA3LNmstdDGtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -50,41 +48,7 @@
         <a href="documents/Stairs.pdf" class="download-button" target="_blank">View PDF</a>
     </div>
 
-    <center style="margin-top: -20px;"> <button id="toggleContentButton"><p>Old <br> ▽</p></button> </center>
-
-    <div id="contentToToggle" class="hidden-content">
-
-    <center style="margin-top: 40px;"><h2>Old</h2></center>
-
-    <div class="composition">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3IfqBZPRysc?si=k_tqTvqgeCVtKcV_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <br><br><h2 style="display: inline;"><i>Two Minutes of Spring</i> </h2><h3 style="display: inline;">2023</h3>​
-        <h4>Chamber Orchestra (2’09”)</h4>
-        <a href="documents/Two Minutes of Spring.pdf" class="download-button" target="_blank">View PDF</a>
-    </div>
-
-    <div class="composition">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nSDgGn-42zA?si=svdyVKOthtlgKJPv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <br><br><h2 style="display: inline;"><i>Cape Elizabeth</i> </h2><h3 style="display: inline;">2021</h3>​
-        <h4>String Quartet (22’30”)</h4>
-        <b>Credits: </b>Lucia Di Blasio Scott [Violin I], Nicole d'Oliveira [Violin II],<br> Karin Gaertner [Viola], Jessica Scott [Cello], John Walton [Score Editor]
-    </div>
-
-    <div class="composition">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/loBv6gSZkTQ?si=KvdpjNokoa8rJKK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <br><br><h2 style="display: inline;"><i>Beginnings Pt. 2</i> </h2><h3 style="display: inline;">2021-2022</h3>​
-        <h4>Collection of early scores & recordings (15’01”)</h4>
-        <b>Credits: </b>Richard Kuhns [Accordion] (<i>France</i>)
-    </div>
-
-    <div class="composition">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/P0CcBJsPMQQ?si=GU9iUjVWFPXM6PVT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-       <br><br><h2 style="display: inline;"><i>Beginnings Pt. 1</i> </h2><h3 style="display: inline;">2018-2020</h3>​
-        <h4>Collection of early scores & recordings (30’16”)</h4>
-        <b>Credits: </b>Alex Saxon [Flute],<br> Charles Slim [Double Bass] (<i>Courtyard Guitar</i>)
-    </div>
-    </div>
-
+  
 
     <footer>
         <p style="padding-right: 5px;">© 2023-2024</p>
@@ -94,23 +58,6 @@
       </footer>
 
     <script>
-
-document.addEventListener('DOMContentLoaded', function () {
-    const toggleContentButton = document.getElementById('toggleContentButton')
-    const contentToToggle = document.getElementById('contentToToggle')
-
-    toggleContentButton.addEventListener('click', function () {
-        if (contentToToggle.classList.contains('hidden-content')) {
-            contentToToggle.classList.remove('hidden-content')
-            toggleContentButton.classList.add('cloud-animation')
-            setTimeout(() => {
-                toggleContentButton.style.display = 'none'
-            }, 500)
-        } else {
-            contentToToggle.classList.add('hidden-content')
-        }
-    })
-})
 
                                     //Hamburger
     function toggleMenu() {
