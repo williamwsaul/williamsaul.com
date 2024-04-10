@@ -30,7 +30,7 @@ body {
 }
 
 li img, .logo-mobile img {
-  max-height: 50px;
+  max-height: 45px;
 }
 
 li img:hover, .logo-mobile img:hover {
