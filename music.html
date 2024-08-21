@@ -2,72 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>William Saul - Music</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-    <header class="main-header">
-        <a href="index.html" class="logo-mobile"><img src="images/favicon.png" alt="Logo"></a>
-        <button class="hamburger-btn" onclick="toggleMenu()">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-        </button>
-        <nav class="menu" id="sideMenu">
-            <ul>
-                <li><a href="biography.html">BIOGRAPHY</a></li>
-                <li><a href="music.html">MUSIC</a></li>
-                <li class="logo-normal"><a href="index.html"><img src="images/favicon.png" alt="Logo"></a></li>
-                <li><a href="writings.html">WRITINGS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
+    <header>
+        <a href="about.html" class="nav-button">ABOUT</a>
+        <a href="music.html" class="nav-button">MUSIC</a>
+        <a href="index.html"><img src="images/favicon.png" alt="Logo"></a>
+        <a href="writings.html" class="nav-button">WRITINGS</a>
+        <a href="contact.html" class="nav-button">CONTACT</a>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
-
-    <div class="composition">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/s2in0UTixLA?si=fybNA3LNmstdDGtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <br><br><h2 style="display: inline;"><i>A Light Abyss</i> </h2><h3 style="display: inline;">2023</h3>​
-        <h4>Solo, bowed guitar (3’44”)</h4>
-        <a href="documents/A Light Abyss.pdf" class="download-button" target="_blank">View PDF</a>
+    <div class="dropdown-menu">
+        <a href="about.html" class="dropdown-item">ABOUT</a>
+        <a href="music.html" class="dropdown-item">MUSIC</a>
+        <a href="writings.html" class="dropdown-item">WRITINGS</a>
+        <a href="contact.html" class="dropdown-item">CONTACT</a>
     </div>
+    <main>
+        <div class="works-list-container">
+            <div class="works-list">
 
-    <div class="composition">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lweVeUNoFqM?si=dYU09ABUjy80cvBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <br><br><h2 style="display: inline;"><i>The Observer</i> </h2><h3 style="display: inline;">2023</h3>​
-        <h4>Voice, wind chimes, tree branches, smoker drip pan, chainsaw (3’58”)</h4>
-        <a href="documents/The Observer.pdf" class="download-button" target="_blank">View PDF</a>
-    </div>
-
-    <div class="composition">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sEMfnI64zPw?si=dc4D9l-KgDoP8Udc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <br><br><h2 style="display: inline;"><i>Stairs</i> </h2><h3 style="display: inline;">2023</h3>​
-        <h4>Staircase & electronics (5’13”)</h4>
-        <a href="documents/Stairs.pdf" class="download-button" target="_blank">View PDF</a>
-    </div>
-
+                <div class="year">2024</div>
+                <div class="work-item">
+                    <div class="work-title">Coming Soon</div>
+                    <div>String quartet and field recording (0’00”)</div>
+                    <div><i>Performance details approaching</i></div>
+                    <div class="custom-button-container">
+                        <a href="https://williamsaul.com/music" class="custom-button" target="_blank">Recording</a>
+                        <a href="https://williamsaul.com/music" class="custom-button" target="_blank">Materials</a>
+                    </div>
+                </div>
+                <div class="year">2023</div>
+                <div class="work-item">
+                    <div class="work-title">A Light Abyss</div>
+                    <div>Solo bowed guitar (3’44”)</div>
+                    <div class="custom-button-container">
+                        <a href="https://youtu.be/s2in0UTixLA?feature=shared" class="custom-button" target="_blank">Recording</a>
+                        <a href="documents/A Light Abyss.pdf" class="custom-button" target="_blank">Materials</a>
+                    </div>
+                </div>
+                <div class="year">2023</div>
+                <div class="work-item">
+                    <div class="work-title">The Observer</div>
+                    <div>Voice, wind chimes, tree branches, smoker drip pan, chainsaw, video (3’58”)</div>
+                    <div class="custom-button-container">
+                        <a href="https://youtu.be/lweVeUNoFqM?feature=shared" class="custom-button" target="_blank">Recording</a>
+                        <a href="documents/The Observer.pdf" class="custom-button" target="_blank">Materials</a>
+                    </div>
+                </div>
+                <div class="year">2023</div>
+                <div class="work-item">
+                    <div class="work-title">Stairs</div>
+                    <div>Staircase and electronics (5’13”)</div>
+                    <div class="custom-button-container">
+                        <a href="https://youtu.be/sEMfnI64zPw?feature=shared" class="custom-button" target="_blank">Recording</a>
+                        <a href="documents/Stairs.pdf" class="custom-button" target="_blank">Materials</a>
+                    </div>
+                </div>
+                <div class="year">2023</div>
+                <div class="work-item">
+                    <div class="work-title">Two Minutes of Spring</div>
+                    <div>Chamber orchestra (2’11”)</div>
+                    <div><i>Media Scoring Style</i></div>
+                    <div class="custom-button-container">
+                        <a href="https://youtu.be/3IfqBZPRysc?feature=shared" class="custom-button" target="_blank">Recording</a>
+                        <a href="documents/Two Minutes of Spring.pdf" class="custom-button" target="_blank">Materials</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
-        <p style="padding-right: 5px;">© 2023-2024</p>
-        <a href="https://www.youtube.com/@williamsaul"><img src="images/youtube.png" alt="YouTube" width="25px" height="25px"></a>
-        <a href="https://www.twitter.com/@williamwsaul" style="margin-left: 5px;"><img src="images/X.jpg" alt="Twitter" width="25px" height="25px"></a>
-      </footer>
-
-    <script>
-
-                                    //Hamburger
-    function toggleMenu() {
-      let sideMenu = document.getElementById('sideMenu')
-                sideMenu.classList.toggle('open')
-            }
-    
-            window.addEventListener('resize', function() {
-                let sideMenu = document.getElementById('sideMenu')
-                if (window.innerWidth > 768) {
-                    sideMenu.classList.remove('open')
-                }
-            })
-      </script>
+        <p>&copy; 2023-2024 William Saul</p>
+        <a href="https://www.youtube.com/@williamsaul" style="margin-left: 5px;" target="_blank"><img src="images/youtube.png" alt="YouTube" width="25px" height="25px"></a>
+        <a href="https://www.twitter.com/@williamwsaul" style="margin-left: 5px;" target="_blank"><img src="images/X.jpg" alt="X" width="25px" height="25px"></a>
+    </footer>
 </body>
 </html>

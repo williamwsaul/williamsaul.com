@@ -1,196 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>William Saul - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Saul - Home</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-  <header class="main-header">
-    <a href="index.html" class="logo-mobile"><img src="images/favicon.png" alt="Logo"></a>
-    <button class="hamburger-btn" onclick="toggleMenu()">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-    </button>
-    <nav class="menu" id="sideMenu">
-        <ul>
-            <li><a href="biography.html">BIOGRAPHY</a></li>
-            <li><a href="music.html">MUSIC</a></li>
-            <li class="logo-normal"><a href="index.html"><img src="images/favicon.png" alt="Logo"></a></li>
-            <li><a href="writings.html">WRITINGS</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </nav>
-</header>
-
-
-<div class="slideshow-container">
-    <button onclick="toggleArchive()" id="archiveButton">Archive</button>
-
-    <div class="slide active"><img src="images/August2023.jpeg" alt="Slide 1"></div>
-    <div class="slide"><img src="images/Nov2021.png" alt="Slide 2"></div>
-    <div class="slide"><img src="images/March2020.png" alt="Slide 3"></div>
-    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-    <a class="next" onclick="changeSlide(1)">&#10095;</a>
-    <div class="dot-container">
-      <span class="dot active" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
+    <header>
+        <a href="about.html" class="nav-button">ABOUT</a>
+        <a href="music.html" class="nav-button">MUSIC</a>
+        <a href="index.html"><img src="images/favicon.png" alt="Logo"></a>
+        <a href="writings.html" class="nav-button">WRITINGS</a>
+        <a href="contact.html" class="nav-button">CONTACT</a>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <div class="dropdown-menu">
+        <a href="about.html" class="dropdown-item">ABOUT</a>
+        <a href="music.html" class="dropdown-item">MUSIC</a>
+        <a href="writings.html" class="dropdown-item">WRITINGS</a>
+        <a href="contact.html" class="dropdown-item">CONTACT</a>
     </div>
-</div>
-
-<div class="quote" style="font-size: 110%;">
-    <p>   
-    "Music is a mysterious form of mathematics whose elements are derived from the infinite. Music is the expression of the movement of the waters, 
-    the play of the curves described by changing breezes. There is nothing more musical than a sunset. He who feels what he sees will find no more
-    beautiful example of in all that book which, alas, musicians read but too little—the book of Nature." — Claude Debussy
-    </p>
-</div>
-
-<div class="photo-gallery-container" style="display: none;">
-  <button onclick="returnToSlideshow()" id="returnButton">Return</button>
-
-    <div class="year-header">2023</div>
-    <div class="gallery">
-      <img src="images/August2023.jpeg" alt="August 2023" onclick="zoomImage('images/August2023.jpeg')">
-    </div>
-
-    <div class="year-header">2021</div>
-    <div class="gallery">
-      <img src="images/Nov2021.png" alt="November 2021" onclick="zoomImage('images/Nov2021.png')">
-    </div>
-
-    <div class="year-header">2020</div>
-    <div class="gallery">
-      <img src="images/April2020.png" alt="April 2020" onclick="zoomImage('images/April2020.png')">
-      <img src="images/March2020.png" alt="March 2020" onclick="zoomImage('images/March2020.png')">
-      <img src="images/January2020.jpeg" alt="January 2020" onclick="zoomImage('images/January2020.jpeg')">
-    </div>
-
-    <div class="year-header">2018</div>
-    <div class="gallery">
-      <img src="images/June2018.jpeg" alt="June 2018" onclick="zoomImage('images/June2018.jpeg')">
-      <img src="images/biography_image.jpeg" alt="May 2018" onclick="zoomImage('images/biography_image.jpeg')">
-    </div>
-  </div>
-
-<div class="zoom-overlay" onclick="hideZoomImage()">
-  <img src="" alt="Zoomed Photo">
-</div>
-
-<footer>
-  <p style="padding-right: 5px;">© 2023-2024</p>
-  <a href="https://www.youtube.com/@williamsaul"><img src="images/youtube.png" alt="YouTube" width="25px" height="25px"></a>
-  <a href="https://www.twitter.com/@williamwsaul" style="margin-left: 5px;"><img src="images/X.jpg" alt="Twitter" width="25px" height="25px"></a>
-</footer>
-
-<script>
-let slideIndex = 1
-showSlide(slideIndex)
-
-function changeSlide(n) {
-    showSlide(slideIndex += n)
-}
-
-function currentSlide(n) {
-    showSlide(slideIndex = n)
-}
-
-function showSlide(n) {
-    let slides = document.getElementsByClassName("slide")
-    let dots = document.getElementsByClassName("dot")
-
-    if (n > slides.length) {
-    slideIndex = 1
-    }
-
-    if (n < 1) {
-    slideIndex = slides.length
-    }
-
-    for (let i = 0; i < slides.length; i++) {
-    slides[i].style.opacity = 0
-    }
-
-    for (let i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "")
-    }
-
-    slides[slideIndex - 1].style.opacity = 1
-    dots[slideIndex - 1].className += " active"
-}
-
-function toggleArchive() {
-  const slideshowContainer = document.querySelector(".slideshow-container")
-  const quoteContainer = document.querySelector(".quote")
-  const photoGalleryContainer = document.querySelector(".photo-gallery-container")
-  const archiveButton = document.getElementById("archiveButton")
-  const returnButton = document.getElementById("returnButton")
-
-  slideshowContainer.style.display = slideshowContainer.style.display === "none" ? "block" : "none"
-  quoteContainer.style.display = quoteContainer.style.display === "none" ? "block" : "none"
-
-  if (photoGalleryContainer.style.display === "none") {
-    photoGalleryContainer.style.display = "block"
-    archiveButton.textContent = "Return"
-    returnButton.style.display = "block"
-    photoGalleryVisible = true
-  } else {
-    photoGalleryContainer.style.display = "none"
-    archiveButton.textContent = "Archive"
-    returnButton.style.display = "none"
-    photoGalleryVisible = false
-  }
-}
-
-function returnToSlideshow() {
-  const slideshowContainer = document.querySelector(".slideshow-container")
-  const quoteContainer = document.querySelector(".quote")
-  const photoGalleryContainer = document.querySelector(".photo-gallery-container")
-  const archiveButton = document.getElementById("archiveButton")
-  const returnButton = document.getElementById("returnButton")
-
-  slideshowContainer.style.display = "block"
-  quoteContainer.style.display = "block"
-
-  photoGalleryContainer.style.display = "none"
-  archiveButton.textContent = "Archive"
-  returnButton.style.display = "none"
-  photoGalleryVisible = false
-}
-
-function zoomImage(imageSrc) {
-  const zoomOverlay = document.querySelector(".zoom-overlay")
-  const zoomImage = zoomOverlay.querySelector("img")
-
-  zoomImage.src = imageSrc
-  zoomOverlay.style.display = "flex"
-}
-
-function hideZoomImage() {
-  const zoomOverlay = document.querySelector(".zoom-overlay")
-  zoomOverlay.style.display = "none"
-}
-
-document.getElementById("returnButton").addEventListener("click", returnToSlideshow)
-
-
-                                //Hamburger
-function toggleMenu() {
-            let sideMenu = document.getElementById('sideMenu')
-            sideMenu.classList.toggle('open')
-        }
-
-        window.addEventListener('resize', function() {
-            let sideMenu = document.getElementById('sideMenu')
-            if (window.innerWidth > 768) {
-                sideMenu.classList.remove('open')
-            }
-        })
-
-    </script>
+    <main>
+        <div class="trailer">
+            <iframe width="800px" height="450" src="https://www.youtube-nocookie.com/embed/lweVeUNoFqM?si=dYU09ABUjy80cvBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="quote">
+            <p>
+                "Music is a mysterious form of mathematics whose elements are derived from the infinite. Music is the expression of the movement of the waters, 
+                the play of the curves described by changing breezes. There is nothing more musical than a sunset. He who feels what he sees will find no more
+                beautiful example of in all that book which, alas, musicians read but too little—the book of Nature." — Claude Debussy
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023-2024 William Saul</p>
+        <a href="https://www.youtube.com/@williamsaul" style="margin-left: 5px;" target="_blank"><img src="images/youtube.png" alt="YouTube" width="25px" height="25px"></a>
+        <a href="https://www.twitter.com/@williamwsaul" style="margin-left: 5px;" target="_blank"><img src="images/X.jpg" alt="X" width="25px" height="25px"></a>
+    </footer>
 </body>
 </html>

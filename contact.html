@@ -2,63 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>William Saul - Contact</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-  <header class="main-header">
-    <a href="index.html" class="logo-mobile"><img src="images/favicon.png" alt="Logo"></a>
-    <button class="hamburger-btn" onclick="toggleMenu()">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-    </button>
-    <nav class="menu" id="sideMenu">
-        <ul>
-            <li><a href="biography.html">BIOGRAPHY</a></li>
-            <li><a href="music.html">MUSIC</a></li>
-            <li class="logo-normal"><a href="index.html"><img src="images/favicon.png" alt="Logo"></a></li>
-            <li><a href="writings.html">WRITINGS</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </nav>
-</header>
-
-    <div id="contact-container">
-      <div class="contact-info">
-        <h2 style="text-align: center;">Inquiries</h2>
-        <a href=""><img src="images/email.png" alt="Email" width="35px" height="35px"> <img src="images/something.png" alt="Something" width="100px" height="35px"></a>
-        <h2 style="text-align: center;">Media</h2>
-        <a href="https://www.youtube.com/@williamsaul"><img src="images/youtube.png" alt="YouTube" width="35px" height="35px">@williamsaul</a>
-        <a href="https://www.twitter.com/@williamwsaul"><img src="images/X.jpg" alt="Twitter" width="35px" height="35px">@williamwsaul</a>
-      </div>
-      <div class="contact-photo">
-        <img src="images/A Distorted View.png" id="A-Distorted-View">
-      </div>
+    <header>
+        <a href="about.html" class="nav-button">ABOUT</a>
+        <a href="music.html" class="nav-button">MUSIC</a>
+        <a href="index.html"><img src="images/favicon.png" alt="Logo"></a>
+        <a href="writings.html" class="nav-button">WRITINGS</a>
+        <a href="contact.html" class="nav-button">CONTACT</a>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <div class="dropdown-menu">
+        <a href="about.html" class="dropdown-item">ABOUT</a>
+        <a href="music.html" class="dropdown-item">MUSIC</a>
+        <a href="writings.html" class="dropdown-item">WRITINGS</a>
+        <a href="contact.html" class="dropdown-item">CONTACT</a>
     </div>
-
+    <main>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 class="contact-title">Enquiries</h2>
+                <a href="mailto:someone@example.com" class="contact-link">
+                    <img src="images/email.png" alt="Email" class="contact-icon">
+                    <img src="images/something.png" alt="Additional Information" class="contact-icon-large">
+                </a>
+                <h2 class="contact-title">Media</h2>
+                <a href="https://www.youtube.com/@williamsaul" class="contact-link" aria-label="YouTube Channel" target="_blank">
+                    <img src="images/youtube.png" alt="YouTube" class="contact-icon">
+                    @williamsaul
+                </a>
+                <a href="https://www.x.com/@williamwsaul" class="contact-link" aria-label="X Profile" target="_blank">
+                    <img src="images/X.jpg" alt="Twitter" class="contact-icon">
+                    @williamwsaul
+                </a>
+            </div>
+            <div class="contact-photo">
+                <img src="images/A Distorted View.png" alt="A Distorted View" class="contact-image">
+            </div>
+        </div>
+    </main>
     <footer>
-      <p style="padding-right: 5px;">© 2023-2024</p>
-      <a href="https://www.youtube.com/@williamsaul"><img src="images/youtube.png" alt="YouTube" width="25px" height="25px"></a>
-      <a href="https://www.twitter.com/@williamwsaul" style="margin-left: 5px;"><img src="images/X.jpg" alt="Twitter" width="25px" height="25px"></a>
+        <p>&copy; 2023-2024 William Saul</p>
+        <a href="https://www.youtube.com/@williamsaul" style="margin-left: 5px;" target="_blank"><img src="images/youtube.png" alt="YouTube" width="25px" height="25px"></a>
+        <a href="https://www.twitter.com/@williamwsaul" style="margin-left: 5px;" target="_blank"><img src="images/X.jpg" alt="X" width="25px" height="25px"></a>
     </footer>
-    
-<script>
-                                //Hamburger
-function toggleMenu() {
-  let sideMenu = document.getElementById('sideMenu')
-            sideMenu.classList.toggle('open')
-        }
-
-        window.addEventListener('resize', function() {
-            let sideMenu = document.getElementById('sideMenu')
-            if (window.innerWidth > 768) {
-                sideMenu.classList.remove('open')
-            }
-        })
-  </script>
 </body>
 </html>
