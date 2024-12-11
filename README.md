@@ -7,7 +7,7 @@ This website showcases my music compositions and other related materials. It was
 
 ### Project Objectives:
 * Host PDF documents, images, and text
-* Create an aesthetically compelling experience for visitors
+* Create aesthetically compelling experience for visitors
 * Provide contact information with minimal risk of spam
 
 Much appreciated,
