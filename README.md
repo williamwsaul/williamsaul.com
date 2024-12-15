@@ -11,5 +11,4 @@ Objectives:
 * Provide contact information with minimal risk of spam
 
 Much appreciated,
-
 William
