@@ -10,5 +10,5 @@ Objectives:
 * Create aesthetically compelling experience for visitors
 * Provide contact information with minimal risk of spam
 
-Much appreciated,
+Much appreciated,   
 William
