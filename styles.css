@@ -160,7 +160,7 @@ footer {
 /*Music*/
 
 .works-list-container {
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     margin: 0;
@@ -180,8 +180,14 @@ footer {
     border-radius: 8px;
 }
 .year,
+.year-mobile,
 .work-title {
     font-weight: bold;
+}
+.year-mobile {
+    visibility: hidden;
+    text-align: center;
+    font-size: 0em;
 }
 .work-item {
     display: flex;
@@ -216,7 +222,15 @@ footer {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    .year,
+    .year {
+        visibility: hidden;
+        font-size: 0em;
+    }
+    .year-mobile {
+        visibility: visible;
+        font-size: 1.2em;
+        padding-top: 20px;
+    }
     .work-title {
         font-size: 1.2em;
     }
