@@ -5,6 +5,7 @@ body {
     font-family: 'Cochin', 'Times New Roman', Times, serif;
     background: radial-gradient(ellipse 200% 50% at center, #000000, #141c26);
     color: #ffffff;
+    cursor: url('images/eye-cursor.png') 16 16, auto;
 }
 header {
     display: flex;
@@ -293,6 +294,23 @@ footer {
 }
 .essay p.preview a.read-more:hover {
     text-decoration: underline;
+}
+.twitter-embed {
+    max-width: 800px;
+    margin: 0 auto 20px auto; /* remove top margin, keep bottom space */
+    padding: 20px;
+    background-color: #ffffff13;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    /* Center tweet horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.twitter-embed blockquote.twitter-tweet {
+    margin: 0 !important;
 }
 
 /*Contact*/
