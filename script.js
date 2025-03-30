@@ -1,3 +1,5 @@
+//Hamburger menus
+
 document.addEventListener('DOMContentLoaded', function() {
     const hamburgerMenu = document.querySelector('.hamburger-menu');
     const dropdownMenu = document.querySelector('.dropdown-menu');
@@ -12,6 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+//Adaptive Bio
+
 const words = ["i", "make", "music", "and", "art"];
 
 function permute(arr) {
@@ -42,4 +47,4 @@ function updateQuote() {
 }
 
 updateQuote();
-setInterval(updateQuote, 2000);
+setInterval(updateQuote, 1000);
